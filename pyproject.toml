@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hermes-ollama-cloud"
+version = "1.0.0"
+description = "Ollama Cloud web search and fetch plugin for Hermes Agent"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Jason McNeal" }]
+keywords = ["hermes", "hermes-agent", "ollama", "ollama-cloud", "web-search", "plugin"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "httpx",
+]
+
+[project.entry-points."hermes_agent.plugins"]
+ollama-cloud = "hermes_ollama_cloud"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hermes_ollama_cloud"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"hermes_ollama_cloud/plugin.yaml" = "hermes_ollama_cloud/plugin.yaml"
