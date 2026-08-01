@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "hermes-ollama-cloud"
-version = "1.0.0"
+version = "1.0.1"
 description = "Ollama Cloud web search and fetch plugin for Hermes Agent"
 readme = "README.md"
 requires-python = ">=3.10"
