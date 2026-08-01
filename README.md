@@ -17,7 +17,7 @@ The package registers itself via the `hermes_agent.plugins` entry point. Hermes 
 ### Option B — manual drop-in
 
 ```bash
-git clone https://github.com/jmcnealio/hermes-ollama-cloud.git ~/.hermes/plugins/web/ollama
+git clone https://github.com/jcmcneal/hermes-ollama-cloud.git ~/.hermes/plugins/web/ollama
 ```
 
 Then enable it:
