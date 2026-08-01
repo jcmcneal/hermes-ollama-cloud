@@ -1,4 +1,4 @@
-name: web-ollama
+name: ollama-cloud
 version: 1.0.0
 description: "Ollama Cloud web search and fetch. Requires OLLAMA_API_KEY — sign up at https://ollama.com."
 author: jcmcneal

@@ -21,16 +21,16 @@ The package registers itself via the `hermes_agent.plugins` entry point. Hermes 
 ### Option B — manual drop-in
 
 ```bash
-git clone https://github.com/jcmcneal/hermes-ollama-cloud.git ~/.hermes/plugins/web-ollama
+git clone https://github.com/jcmcneal/hermes-ollama-cloud.git ~/.hermes/plugins/ollama-cloud
 ```
 
 Then enable it:
 
 ```bash
-hermes plugins enable web-ollama
+hermes plugins enable ollama-cloud
 ```
 
-> The plugin directory name must be `web-ollama` (flat, matching the plugin name in `plugin.yaml`). Hermes does not support nested subdirectories like `~/.hermes/plugins/web/ollama`.
+> The plugin directory name must be `ollama-cloud` (flat, matching the plugin name in `plugin.yaml`). Hermes does not support nested subdirectories like `~/.hermes/plugins/web/ollama`.
 
 ## Configure
 
