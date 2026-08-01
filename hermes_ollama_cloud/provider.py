@@ -7,9 +7,9 @@ No SDK dependency — just ``httpx`` which is already a core dep.
 Config keys this provider responds to::
 
     web:
-      search_backend: "ollama"      # explicit per-capability
-      extract_backend: "ollama"     # explicit per-capability
-      backend: "ollama"             # shared fallback for both
+      search_backend: "ollama-cloud"   # explicit per-capability
+      extract_backend: "ollama-cloud"   # explicit per-capability
+      backend: "ollama-cloud"           # shared fallback for both
 
 Env var::
 
@@ -47,7 +47,7 @@ class OllamaWebSearchProvider(WebSearchProvider):
 
     @property
     def name(self) -> str:
-        return "ollama"
+        return "ollama-cloud"
 
     @property
     def display_name(self) -> str:
@@ -172,7 +172,7 @@ class OllamaWebSearchProvider(WebSearchProvider):
         return {
             "name": "Ollama Cloud",
             "tag": "Web search and fetch (included with Ollama subscription)",
-            "web_backend": "ollama",
+            "web_backend": "ollama-cloud",
             "env_vars": [
                 {
                     "key": "OLLAMA_API_KEY",

@@ -32,7 +32,7 @@ class TestProviderBasics:
     """ABC contract — name, availability, capabilities."""
 
     def test_name(self, provider):
-        assert provider.name == "ollama"
+        assert provider.name == "ollama-cloud"
 
     def test_display_name(self, provider):
         assert provider.display_name == "Ollama Cloud"
@@ -53,7 +53,7 @@ class TestProviderBasics:
     def test_get_setup_schema(self, provider):
         schema = provider.get_setup_schema()
         assert schema["name"] == "Ollama Cloud"
-        assert schema["web_backend"] == "ollama"
+        assert schema["web_backend"] == "ollama-cloud"
         env_vars = schema["env_vars"]
         assert len(env_vars) == 1
         assert env_vars[0]["key"] == "OLLAMA_API_KEY"

@@ -4,6 +4,6 @@ description: "Ollama Cloud web search and fetch. Requires OLLAMA_API_KEY — sig
 author: jcmcneal
 kind: backend
 provides_web_providers:
-  - ollama
+  - ollama-cloud
 requires_env:
   - OLLAMA_API_KEY
